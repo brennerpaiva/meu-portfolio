@@ -17,6 +17,10 @@
     text-decoration: none;
 }
 
+body {
+    background-color: #010026;
+}
+
 .max-width {
     max-width: 1300px;
     padding: 0 80px;
@@ -48,7 +52,7 @@
 
 .navbar .logo a{
     color: #fff;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 600;
 }
 
@@ -90,18 +94,25 @@
 
 .home {
     display: flex;
-    background-color: #010026;
     height: 100vh;
     color: #fff;
     font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+    
 }
 
 .home .max-width{
-    margin: auto  0 auto 80px;
+    margin: auto  0 auto 0;
 }
 
+
 .home .home-content .text-1 {
-    font-size: 27px;
+    font-size: 35px;
 }
 
 .home .home-content .text-2 {
@@ -111,17 +122,26 @@
 }
 
 .home .home-content .text-3 {
-    font-size: 27px;
+    font-size: 25px;
     margin: 5px 0;
+    max-width: 85%;
    
+}
+
+.home .imagem img {
+    width: 350px;
+}
+
+.home .imagem img {
+    max-width: 100%;
 }
 
 /* ----- Menu- Mobile ----- */
 .menu-btn {
     color: #fff;
-    font-size: 23px;
+    font-size: 25px;
     cursor: pointer;
-    display: block;
+    display: none;
 }
 
 /* ----- Resposivo ----- */
@@ -155,22 +175,61 @@
         font-size: 30px;
     }
 
+    .home {
+        flex-direction: column;
+    }
+
+    .home .home-content {
+        height: 50%;
+    }
+
+    .home .home-content .text-1 {
+        font-size: 40px;
+    }
+
     .home .home-content .text-2 {
-        font-size: 70px;
+        font-size: 65px;
     }
 
     .home .home-content .text-3 {
-        font-size: 35px;
+        font-size: 30px;
+    }
+
+    .home .imagem img {
+        align-items: center;
+        width: 200px;
     }
 
 }
 
 @media(max-width: 690px) {
+
+    .home .home-content .text-1 {
+        font-size: 35px;
+    }
+
+
     .home .home-content .text-2 {
-        font-size: 70px;
+        font-size: 60px;
     }
 
     .home .home-content .text-3 {
-        font-size: 32px;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 500px) {
+
+    .home .home-content .text-1 {
+        font-size: 25px;
+    }
+
+
+    .home .home-content .text-2 {
+        font-size: 50px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 20px;
     }
 }
