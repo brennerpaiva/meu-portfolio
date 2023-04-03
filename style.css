@@ -128,6 +128,22 @@ body {
    
 }
 
+.home .home-content a {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    padding: 12px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid white;
+}
+
+.home .home-content a:hover{
+    background: none;
+    color: red;
+}
+
 .home .imagem img {
     width: 350px;
 }
@@ -144,10 +160,12 @@ body {
     display: none;
 }
 
+
 /* ----- Resposivo ----- */
 
 @media(max-width: 947px) {
     .max-width {
+        max-width: 800px;
         padding: 0 50px;
     }
 
@@ -165,7 +183,14 @@ body {
         background-color: black;
         padding-top: 80px;
         text-align: center;
+        transition: all 0.3s ease;
     }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+
     .navbar .menu li {
         display: block;
     }
@@ -200,6 +225,11 @@ body {
         width: 200px;
     }
 
+    .home .home-content a {
+        font-size: 23px;
+        padding: 10px 20px;
+    }
+
 }
 
 @media(max-width: 690px) {
@@ -215,6 +245,11 @@ body {
 
     .home .home-content .text-3 {
         font-size: 20px;
+    }
+
+    .home .home-content a {
+        font-size: 23px;
+        padding: 10px 20px;
     }
 }
 
