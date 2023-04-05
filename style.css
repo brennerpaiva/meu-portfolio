@@ -295,11 +295,14 @@ section .title::after {
     background-color: burlywood;
 }
 
-.projetos-wrapper {
+.projetos .projetos-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10%;
     margin-bottom: 5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
   }
   
   .projetos-card {
@@ -335,7 +338,6 @@ section .title::after {
   .projetos-card-button ion-icon {
         font-weight: 600;
         font-size: 20px;
-        border: 1px solid black;
   }
   
   
@@ -507,6 +509,13 @@ section .title::after {
         font-size: 23px;
         padding: 10px 20px;
     }
+
+    .projetos .projetos-content {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 5%;
+        margin-bottom: 10rem;
+      }
 }
 
 @media(max-width: 500px) {
