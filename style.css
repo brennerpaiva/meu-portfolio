@@ -33,7 +33,7 @@ body{
 .navbar{
     position: fixed;
     width: 100%;
-    background-color: rgb(53, 48, 194);
+    background-color: #010026;
     padding: 25px 0;
     z-index: 999;
     font-family: 'Open Sans', sans-serif;
@@ -42,7 +42,7 @@ body{
 }
 
 .navbar.sticky {
-    background-color: red;
+    background-color: #3E1FCC;
     padding: 10px 0;
 }
 
@@ -59,7 +59,7 @@ body{
 }
 
 .navbar .logo a span{
-    color: red;
+    color: white;
     transition: all 0.3 ease;
 }
 
@@ -134,18 +134,18 @@ body{
 
 .home .home-content a {
     display: inline-block;
-    background-color: red;
+    background-color: #3E1FCC;
     color: white;
     font-size: 25px;
     padding: 12px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid white;
+    border: 2px solid #3E1FCC;
 }
 
 .home .home-content a:hover{
     background: none;
-    color: red;
+    color: #3E1FCC;
 }
 
 .home .imagem  {
@@ -159,7 +159,7 @@ body{
     height: 350px;
 }
 
-/* ----- Menu- Mobile ----- */
+/* ----- Menu Mobile ----- */
 .menu-btn {
     color: #fff;
     font-size: 25px;
@@ -173,7 +173,7 @@ body{
 
 .about {
     font-family: 'Ubuntu', sans-serif;
-    background-color: rgb(53, 48, 194);
+    background-color: rgb(232, 232, 232);
 }
 
 section .title::after {
@@ -234,7 +234,7 @@ section .title::after {
 /* ----- Skills ----- */
 
 .skills {
-    background-color: white;
+    background-color: #271380;
 }
 
 .skills .title::after {
@@ -257,7 +257,7 @@ section .title::after {
     background-color: #010026;
     color: white;
     text-align: center;
-    border-radius: 20px 25px;
+    border-radius: 50px 20px;
     cursor: pointer;
     padding: 20px 25px;
     transition: all 0.5s ease;
@@ -292,7 +292,7 @@ section .title::after {
 /* ----- Projetos ----- */
 
 .projetos {
-    background-color: burlywood;
+    background-color: rgb(232, 232, 232);
 }
 
 .projetos .projetos-content {
@@ -318,7 +318,7 @@ section .title::after {
     color: blue;
     font-size: 0.9rem;
     display: block;
-    margin: 2rem 0;
+    margin: 10px;
   }
 
   .projetos-card-button {
@@ -328,7 +328,6 @@ section .title::after {
     font-weight: 600;
     font-size: 20px;
     padding: 10px 10px;
-    margin-top: 20px;
     border-radius: 4px;
     border: 2px solid white;
     transition: all 0.3s ease;
@@ -346,6 +345,7 @@ section .title::after {
     width: 100%;
     transition: 0.5s;
     margin-bottom: 15px;
+    border-radius: 6px
   }
   
   .projeto-img:hover {
@@ -391,6 +391,15 @@ section .title::after {
     padding: 5px;
     transform: translateX(-50%);
 }
+
+/* ----- Footer ------ */
+footer {
+    background-color: #3E1FCC;
+    color: white;
+    padding: 20px 23px;
+    text-align: center;
+}
+
 
 /* ----- Resposivo ----- */
 
