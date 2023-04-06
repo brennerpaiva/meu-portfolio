@@ -82,14 +82,12 @@ body{
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
-
+    transition: color 0.3s ease;
 }
 
 .navbar .menu li a:hover {
     color: red;
     font-weight: 600px;
-    transition: color 0.3s ease;
-
 }
 
 .navbar.sticky .menu li a:hover {
@@ -117,7 +115,6 @@ body{
 .home .max-width{
     margin: auto  0 auto 0;
 }
-
 
 .home .home-content .text-1 {
     font-size: 35px;
@@ -200,8 +197,10 @@ body{
     background-color: rgb(232, 232, 232);
 }
 
-section .title::after {
+
+.about .title::after {
     content: "Quem sou eu";
+    background-color: rgb(232, 232, 232);
 }
 
 .about .about-content {
@@ -232,14 +231,14 @@ section .title::after {
 
 .about .about-content .right a {
     display: inline-block;
-    background-color: green;
+    background-color: #3E1FCC;
     color: white;
     font-weight: 600;
     font-size: 20px;
     padding: 10px 10px;
     margin-top: 20px;
     border-radius: 4px;
-    border: 2px solid white;
+    border: 2px solid #3E1FCC;
     transition: all 0.3s ease;
 }
 
@@ -261,13 +260,18 @@ section .title::after {
     background-color: #271380;
 }
 
+.skills .title {
+    color: #fff;
+}
+
 .skills .title::after {
     content: "Venho estudando";
-    background-color: white;
+    background-color: #271380;
+    color: #fff;
 }
 
 .skills .title::before {
-    background-color: red;
+    background-color: #fff;
 }
 
 .skills .skills-content {
@@ -284,8 +288,8 @@ section .title::after {
     border-radius: 50px 20px;
     cursor: pointer;
     padding: 20px 25px;
-    transition: all 0.5s ease;
     margin-bottom: 20px;
+    transition: all 0.5s ease;
 }
 
 .skills .skills-content .card .box{
@@ -293,19 +297,41 @@ section .title::after {
 }
 
 
-.skills .skills-content .card .box:hover {
+.skills .skills-content .card:hover .box {
     transform: scale(1.03);
 }
-/* .skills .skills-content .card .box:hover {
-    transform: scale(1.05);
-} */
 
+.skills .skills-content .card:hover {
+    background-color: rgb(1, 0, 38, 0.3);
+}
 
 
 .skills .skills-content .card ion-icon {
     font-size: 70px;
     color: blue;
+    transition: all 0.3s ease;
 }
+
+.skills .skills-content .card ion-icon:hover {
+    font-size: 70px;
+}
+
+.skills .skills-content .card:hover #html {
+    color: #DD5E14;
+}
+
+.skills .skills-content .card:hover #css {
+    color: #096fff;
+}
+
+.skills .skills-content .card:hover #js {
+    color: #EFD81D;
+}
+
+.skills .skills-content .card:hover #react {
+    color: #61DAFB;
+}
+
 
 .skills .skills-content .card .text {
     font-size: 20px;
@@ -316,6 +342,14 @@ section .title::after {
 /* ----- Projetos ----- */
 
 .projetos {
+    background-color: rgb(232, 232, 232);
+}
+
+.projetos .title {
+    color: black;
+}
+
+.projetos .title::after {
     background-color: rgb(232, 232, 232);
 }
 
@@ -347,13 +381,13 @@ section .title::after {
 
   .projetos-card-button {
     display: inline-block;
-    background-color: green;
+    background-color: #010026;
     color: white;
     font-weight: 600;
     font-size: 20px;
     padding: 10px 10px;
     border-radius: 4px;
-    border: 2px solid white;
+    border: 2px solid #010026;
     transition: all 0.3s ease;
     
   }
@@ -365,7 +399,8 @@ section .title::after {
   
   
   .projeto-img {
-    border-bottom: 5px solid #00d2df;
+    border-bottom: 5px solid rgb(62, 31, 204, 0.6) ;
+    
     width: 100%;
     transition: 0.5s;
     margin-bottom: 15px;
@@ -471,11 +506,11 @@ footer {
     .navbar .menu li {
         display: block;
     }
+    
     .navbar .menu li a {
         display: inline-block;
         margin: 20px 0;
         font-size: 30px;
-        pointer-events: none;
         transition: all 0.3s ease;
     }
 
@@ -523,8 +558,6 @@ footer {
     .skills .skills-content .card {
         width: calc(50% - 10px);
     }
-    
-}
 
 @media(max-width: 690px) {
 
@@ -574,5 +607,5 @@ footer {
 
     .skills .skills-content .card {
         width: 100%;
-    }
+    } 
 }
