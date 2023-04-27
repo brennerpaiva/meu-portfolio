@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="video-container">
+        <video src="img/Valorant 2023.01.10 - 20.58.53.03.DVR.mp4" loop muted class="clip" muted></video>
+    </div>
+
+    <script>
+        const clip = document.querySelectorAll('.clip');
+        for (let i = 0; i < clip.length; i++) {
+            clip[i].addEventListener('mouseenter',
+            function(e) {
+                clip[i].play()
+            })
+            clip[i].addEventListener('mouseout',
+            function(e) {
+                clip[i].pause()
+            })
+        }
+    </script>
+</body>
+</html>

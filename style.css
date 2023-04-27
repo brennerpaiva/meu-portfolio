@@ -397,17 +397,19 @@ body{
         font-size: 20px;
   }
   
+
   
-  .projeto-img {
+  .projeto-video {
     border-bottom: 5px solid rgb(62, 31, 204, 0.6) ;
-    
+    max-height: 140px;
+    object-fit: cover;
     width: 100%;
     transition: 0.5s;
     margin-bottom: 15px;
     border-radius: 6px
   }
   
-  .projeto-img:hover {
+  .projeto-video:hover {
     transform: scale(110%);
     border-bottom: 5px solid rgba(101, 24, 180, 1);
   }
