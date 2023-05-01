@@ -359,7 +359,6 @@ body{
     gap: 10%;
     margin-bottom: 5rem;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
   }
   
@@ -371,6 +370,10 @@ body{
     font-size: 1.3rem;
     margin-bottom: 20px;
   }
+
+  .projetos-card p {
+    padding: 10px 0px;
+  }
   
   .projetos-card span {
     color: blue;
@@ -380,7 +383,6 @@ body{
   }
 
   .projetos-card-button {
-    display: inline-block;
     background-color: #010026;
     color: white;
     font-weight: 600;
@@ -397,22 +399,37 @@ body{
         font-size: 20px;
   }
   
-
-  
   .projeto-video {
     border-bottom: 5px solid rgb(62, 31, 204, 0.6) ;
     max-height: 140px;
     object-fit: cover;
     width: 100%;
-    transition: 0.5s;
     margin-bottom: 15px;
-    border-radius: 6px
+    border-radius: 6px;
+    filter: opacity(25%);
+    background-color: #3933eb;
+    transition: all 1s ease;
+  }
+
+  .projeto-video:hover {
+    border-bottom: 5px solid rgba(101, 24, 180, 1);
+    filter: none;
+    transition: all 1s ease;
+  }
+
+  .backgroud-video {
+    background-color: #3933eb;
+    max-height: 140px;
+    width: 100%;
+    border-radius: 6px;
+    transition: all 1s ease;
+  }
+
+  .backgroud-video:hover {
+    transform: scale(105%);
+    transition: all 1s ease;
   }
   
-  .projeto-video:hover {
-    transform: scale(110%);
-    border-bottom: 5px solid rgba(101, 24, 180, 1);
-  }
   
 
 
@@ -560,6 +577,7 @@ footer {
     .skills .skills-content .card {
         width: calc(50% - 10px);
     }
+}
 
 @media(max-width: 690px) {
 
