@@ -125,6 +125,14 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
+.home .home-content .text-2::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+  }
+
 .home .home-content .text-3 {
   font-size: 25px;
   margin: 5px 0;
@@ -179,6 +187,15 @@ body {
     transform: translate(0, 0);
   }
 }
+
+@keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
 
 /* ----- Menu Mobile ----- */
 .menu-btn {

@@ -25,3 +25,18 @@ const video = document.querySelectorAll('.projeto-video');
                 video[i].pause()
             })
 }
+
+ function typeWriter(elemento) {
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = '';
+    textoArray.forEach((letra, i) => {
+      setTimeout(() => elemento.innerHTML += letra, 250 * i);
+    });
+  }
+
+ const elemento = document.querySelector(".text-2");
+
+
+
+typeWriter(elemento);
+
