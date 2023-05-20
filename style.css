@@ -36,14 +36,14 @@ body {
 .navbar {
   position: fixed;
   width: 100%;
-  background-color: #272b43;
+  background-color: transparent;
   padding: 25px 0;
   z-index: 999;
   transition: all 0.3s ease;
 }
 
 .navbar.sticky {
-  background-color: ;
+  background-color: #272b43;
   padding: 10px 0;
   
 }
@@ -161,7 +161,7 @@ body {
   height: 40%;
   display: flex;
   align-items: center;
-  animation: load 10s ease-in-out infinite;
+  animation: flutuar 10s ease-in-out infinite;
 }
 
 .home .imagem img {
@@ -169,9 +169,6 @@ body {
   height: 350px;
 }
 
-.home .imagem .flutuante {
-  animation: flutuar 10s ease-in-out infinite;
-}
 
 @keyframes flutuar {
   0% {
@@ -467,7 +464,7 @@ section .title::after {
   bottom: -12px;
   left: 50%;
   font-size: 20px;
-  background-color: rgb(35, 38, 58);
+  background-color: transparent;
   color: rgb(167, 174, 211);
   padding: 5px;
   transform: translateX(-50%);
