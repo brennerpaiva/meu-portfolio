@@ -401,12 +401,21 @@ body {
   border-radius: 4px;
   border: 2px solid #FF4A57;
   transition: all 0.3s ease;
-  
+}
+
+.projetos-card-button:hover{
+  background-color: #FF4A57;
+  color: #fff;
 }
 
 .projetos-card-button ion-icon {
   font-weight: 600;
   font-size: 20px;
+  color: #FF4A57;
+}
+
+.projetos-card-button:hover ion-icon {
+  color: #fff;
 }
 
 .projeto-video {
