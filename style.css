@@ -165,8 +165,8 @@ body {
 }
 
 .home .imagem img {
-  width: 350px;
-  height: 350px;
+  width: 380px;
+  height: 380px;
 }
 
 
@@ -319,6 +319,7 @@ body {
   font-size: 70px;
   color: #FF4A57;
   transition: all 0.3s ease;
+  padding-bottom: 8px;
   
 }
 
@@ -337,6 +338,13 @@ body {
 
 .skills .skills-content .card:hover #react {
   color: #61dafb;
+}
+
+.skills .skills-content .card:hover #firebase {
+  color: #ff9d00;
+}
+.skills .skills-content .card:hover #git {
+  color: #ff3d02;
 }
 
 .skills .skills-content .card .text {
