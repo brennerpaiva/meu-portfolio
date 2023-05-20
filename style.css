@@ -486,6 +486,10 @@ footer {
   text-align: center;
 }
 
+footer a{
+  text-decoration: underline;
+}
+
 /* ----- Resposivo ----- */
 
 @media (max-width: 1177px) {
