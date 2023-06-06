@@ -27,7 +27,6 @@ body {
 
 .max-width {
   max-width: 1300px;
-  padding: 0 80px;
   margin: auto;
 }
 
@@ -97,7 +96,6 @@ body {
 .home {
   display: flex;
   height: 100vh;
-  width: 100vw;
   color: #fff;
   background: #23263A;
   font-family: "Ubuntu", sans-serif;
@@ -105,7 +103,7 @@ body {
   align-items: center;
   justify-content: flex-end;
   max-width: 1300px;
-  padding: 0 80px;
+  padding: 100px;
   margin: auto;
 }
 
@@ -278,7 +276,7 @@ body {
 
 
 .skills .title::after {
-  content: "Venho estudando";
+  content: "Hard Skills";
  
 }
 
@@ -360,7 +358,7 @@ body {
 
 .projetos .title::after {
   width: 100%;
-  content: "Alguns de meus projetos";
+  content: "Alguns de meus códigos";
 }
 
 .projetos .projetos-content {
@@ -374,6 +372,7 @@ body {
 
 .projetos-card {
   width: 90%;
+  margin: 0 auto;
 }
 
 .projetos-card h2 {
@@ -384,7 +383,7 @@ body {
 
 .projetos-card p {
   padding: 10px 0px;
-  height: 220px;
+  height: 190px;
   
 }
 
@@ -507,7 +506,7 @@ footer a{
 @media (max-width: 947px) {
   .max-width {
     max-width: 800px;
-    padding: 0 50px;
+    padding: 0 10px;
   }
 
   .menu-btn {
@@ -521,7 +520,7 @@ footer a{
     height: 100vh;
     left: -100%;
     top: 0;
-    background-color: black;
+    background-color: #272b43;
     padding-top: 80px;
     text-align: center;
     transition: all 0.3s ease;
@@ -547,7 +546,7 @@ footer a{
   }
 
   .home .home-content {
-    margin-top: 140px;
+    margin-top: 100px;
     height: 50%;
   }
 
@@ -568,6 +567,10 @@ footer a{
     padding: 10px 20px;
   }
 
+  .home .imagem {
+    padding-top: 50px;
+  }
+
   .about .about-content .column {
     width: 50%;
   }
@@ -585,9 +588,20 @@ footer a{
   .skills .skills-content .card {
     width: calc(50% - 10px);
   }
+
+  .projetos-card p {
+    padding: 10px 0px;
+    height: 190px;
+    overflow: hidden;
+    
+  }
+  .projetos-card .projetos-card-button{
+    margin-bottom: 8px;
+  }
 }
 
 @media (max-width: 690px) {
+
   .home .home-content .text-1 {
     font-size: 35px;
   }
@@ -614,8 +628,13 @@ footer a{
 }
 
 @media (max-width: 500px) {
+
+  .home {
+    padding: 50px;
+  } 
+
   .home .home-content .text-1 {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .home .home-content .text-2 {
@@ -623,10 +642,10 @@ footer a{
   }
 
   .home .home-content .text-3 {
-    font-size: 20px;
+    font-size: 15px;
   }
 
-  .about .title::after {
+  .title::after {
     font-size: 16px;
   }
 
